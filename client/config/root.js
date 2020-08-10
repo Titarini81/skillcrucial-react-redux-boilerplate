@@ -23,6 +23,8 @@ const OnlyAnonymousRoute = ({ component: Component, ...rest }) => {
   return <Route {...rest} render={func} />
 }
 
+/* this is connent for add redux branch */
+
 const PrivateRoute = ({ component: Component, ...rest }) => {
   const func = (props) =>
     !!rest.user && !!rest.user.name && !!rest.token ? (
